@@ -9,16 +9,15 @@ body {
 }
 
 .search-field {
-  border: none;
-  border-radius: 50px;
+  border-radius: 20px;
   padding: 5px;
-  outline: none;
+  outline: 1px solid black;
 }
 .search-field:hover {
   outline: none;
-  border: none;
+  border: 3px solid rgb(112, 98, 79);
 }
-.search-box {
+/* .search-box {
   border: 1px solid rgb(3, 118, 211);
   width: 281px;
   border-radius: 5px;
@@ -34,7 +33,7 @@ body {
   padding: 10px 50px;
   border-radius: 25px;
  
-}
+} */
  /*============ star icon style  ==========*/
 .stars{
   list-style: none;
@@ -68,7 +67,7 @@ body {
   background:  rgb(225, 253, 225);                                                                                          
 }
 .single-product:hover {                        
-  box-shadow:inset 8px 10px 15px #797575,
+  box-shadow:inset 8px 10px 20px rgb(189, 186, 214),
   inset  -8px -20px 15px white;
   border-radius: 10px;
   border: 5px solid cyan;                
@@ -118,3 +117,4 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/* #797575 */
