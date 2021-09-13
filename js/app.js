@@ -1,5 +1,4 @@
 const loadProducts = () => {
-  // const url = `https://raw.githubusercontent.com/.../main/ranga-api.json`;
   fetch('https://raw.githubusercontent.com/ProgrammingHero1/ranga-store-api/main/ranga-api.json?fbclid=IwAR21LLwD-gQA62TqVrlpPRiypygXHFEcIpIZ6tbBmz1luCnP5lXc1JtkOIE')
     .then((response) => response.json())
     .then((data) => showProducts(data));
@@ -18,20 +17,20 @@ const showProducts = (products) => {
     <img class="product-image" src=${image}></img>
       </div>
       <h3>${product.title}</h3>
-      <p class="fw-bold "> 
-       <ul class="d-flex stars pl-4">
-      <span class="fw-bold me-2"> Rating:</span>
-      <li><i class="far fa-star"></i></li>
-      <li><i class="far fa-star"></i></li>
-      <li><i class="far fa-star"></i></li>
-      <li><i class="far fa-star"></i></li>
-      <li><i class="far fa-star"></i></li>
-       (${product.rating.rate})
-     </ul>
-     </p>
-      <p class="fw-bold">Total Review: <i class="fas fa-user text-primary"></i> ${product.rating.count}</p>
       <p>Category: ${product.category}</p>
       <h2>Price: $ ${product.price}</h2>
+      <p class="fw-bold "> 
+      <ul class="d-flex stars pl-4">
+     <span class="fw-bold me-2"> Rating:</span>
+     <li><i class="fas fa-star styles"></i></li>
+     <li><i class="fas fa-star styles"></i></li>
+     <li><i class="fas fa-star styles"></i></li>
+     <li><i class="fas fa-star styles"></i></li>
+     <li><i class="far fa-star"></i></li>
+      (${product.rating.rate})
+    </ul>
+    </p>
+     <p class="fw-bold">Total Review: <i class="fas fa-user text-primary"></i> ${product.rating.count}</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-dark">add to cart</button>
       <button id="details-btn" class="btn btn-warning">Details</button></div>
       `;

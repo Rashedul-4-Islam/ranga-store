@@ -5,6 +5,7 @@ body {
 .header{
   background: rgb(160, 157, 154);
   padding:10px 0;
+  font-family:cursive;
 }
 
 .search-field {
@@ -34,10 +35,15 @@ body {
   border-radius: 25px;
  
 }
+ /*============ star icon style  ==========*/
 .stars{
   list-style: none;
   margin-left: 30px;
 }
+.styles{
+  color: rgb(69, 85, 44);
+}
+ /*========== search button style  =========*/
 #search-btn{
   background: rgb(51, 23, 23);
   color: aliceblue;
@@ -45,7 +51,6 @@ body {
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
@@ -56,16 +61,23 @@ body {
 .single-product {
   padding: 10px;
   transition: 0.6s;
+  border: 3px solid rgb(221, 214, 214);                                                                                                     
+  border-radius: 10px;                                                                                                  
+  height: 95vh;
+  margin:5px;
+  background:  honeydew;                                                                                          
 }
-.single-product:hover {
-  box-shadow: 4px 4px 7px gray;
+.single-product:hover {                        
+  box-shadow:inset 8px 10px 15px #797575,
+  inset  -8px -20px 15px white;
   border-radius: 10px;
-  border: 1px solid cyan;
+  border: 5px solid cyan;                
 }
 .product-image {
   width: 150px;
   height: 150px;
 }
+  /*=========== cart button style  ==========*/
 #btn-style{
   background: rgb(51, 23, 23);
   color: antiquewhite;
@@ -76,12 +88,14 @@ body {
   background-color: #838ea13b;
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
+ 
   border-radius: 5px;
   margin-right: 100px;
   position: fixed;
 }
 .cart-main {
-  padding-right: 30px;
+  padding-right: 10px;
+ 
 }
 @media only screen and (max-width: 768px) {
   #all-products {
