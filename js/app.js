@@ -30,7 +30,7 @@ const showProducts = (products) => {
       (${product.rating.rate})
     </ul>
     </p>
-     <p class="fw-bold">Total Review: <i class="fas fa-user text-primary"></i> ${product.rating.count}</p>
+     <p class="fw-bold">Total Rating: <i class="fas fa-user text-primary"></i> ${product.rating.count}</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-dark">add to cart</button>
       <button id="details-btn" class="btn btn-warning">Details</button></div>
       `;
