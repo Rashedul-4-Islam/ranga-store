@@ -57,7 +57,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+ /*============== single  product styling ===============*/
 .single-product {
   padding: 10px;
   transition: 0.6s;
@@ -65,7 +65,7 @@ body {
   border-radius: 10px;                                                                                                  
   height: 95vh;
   margin:5px;
-  background:  honeydew;                                                                                          
+  background:  rgb(225, 253, 225);                                                                                          
 }
 .single-product:hover {                        
   box-shadow:inset 8px 10px 15px #797575,
@@ -84,11 +84,9 @@ body {
 }
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
-  background-color: #838ea13b;
+  background-color: rgb(184, 142, 142);
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
- 
   border-radius: 5px;
   margin-right: 100px;
   position: fixed;
@@ -104,7 +102,6 @@ body {
   }
   .cart {
     width: 300px;
-    /* border: 1px solid green; */
     padding: 10px;
     box-shadow: 10px 10px 20px gray;
     border-radius: 5px;
