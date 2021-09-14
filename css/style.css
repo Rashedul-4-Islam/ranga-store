@@ -17,23 +17,7 @@ body {
   outline: none;
   border: 3px solid rgb(112, 98, 79);
 }
-/* .search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
-  margin: auto;
-  margin-top: 20px;
-  border-right: none;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-  
-}
-.search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
- 
-} */
+
  /*============ star icon style  ==========*/
 .stars{
   list-style: none;
